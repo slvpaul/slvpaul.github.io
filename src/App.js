@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { makeStyles } from '@material-ui/core/styles';
+import '@fontsource/roboto-slab';
+import '@fontsource/lato';
+import { Container } from '@material-ui/core';
+import Nav from './components/nav';
+import Hero from './components/hero';
+import Profile from './components/profile';
+import Projects from './components/projects';
+import Contact from './components/contact';
+
+const useStyles = makeStyles({
+  body: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 0,
+    padding: 0,
+    backgroundColor: '#55595C',
+    maxWidth: '2600px'
+},
+});
 
 function App() {
+  const classes = useStyles();
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className={classes.body}>
+      <Nav />
+      <Hero />
+      <Profile />
+      <Projects />
+      <Contact />
+    </Container>
   );
 }
 
