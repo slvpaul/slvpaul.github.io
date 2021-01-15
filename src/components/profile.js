@@ -30,7 +30,8 @@ const useStyles = makeStyles({
     },
 
     grid: {
-        maxWidth: '1000px'
+        maxWidth: '1000px',
+        marginBottom: '20px'
     },
 
     media: {
