@@ -5,29 +5,32 @@ import {
     Typography, 
     Box,
     Card,
-    CardActionArea,
     CardMedia,
     CardContent
 } from '@material-ui/core';
 
 const useStyles = makeStyles({
     profileContainer: {
+        backgroundColor: '#DEE3E7',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontFamily: 'Roboto Slab',
         fontWeight: 900,
-        marginTop: '20px',
-        maxWidth: '600px'
+        maxWidth: '2000px',
     },
 
     profileBox: {
         maxWidth: '300px',
-        margin: '0 20px 20px 20px',
-        color: 'white',
+        margin: '20px',
+        color: 'black',
         textAlign: 'left',
         fontFamily: 'Lato'
+    },
+
+    grid: {
+        maxWidth: '1000px'
     },
 
     media: {
@@ -51,9 +54,8 @@ export default function Profile() {
     return (
         <Container id='about' className={classes.profileContainer}>
             <Box className={classes.profileBox}><Typography variant='h6'>My Skills</Typography></Box>
-            <Grid container direction='row' spacing={2}>
+            <Grid container className={classes.grid} direction='row' spacing={2}>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
                     <CardMedia
                     className={classes.media}
                     title='JavaScript' 
@@ -61,11 +63,9 @@ export default function Profile() {
                     <CardContent>
                         <Typography>JavaScript</Typography>
                     </CardContent>
-                </CardActionArea>
             </Card>
             </Grid>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
                     <CardMedia
                     className={classes.media}
                     title='htmlcss' 
@@ -73,11 +73,9 @@ export default function Profile() {
                     <CardContent>
                         <Typography>HTML and CSS</Typography>
                     </CardContent>
-                </CardActionArea>
             </Card>
             </Grid>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
                     <CardMedia
                     className={classes.media}
                     title='ReactJS' 
@@ -85,10 +83,8 @@ export default function Profile() {
                     <CardContent>
                         <Typography>ReactJS</Typography>
                     </CardContent>
-                </CardActionArea>
             </Card></Grid>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
                     <CardMedia
                     className={classes.media}
                     title='NextJs' 
@@ -96,10 +92,8 @@ export default function Profile() {
                     <CardContent>
                         <Typography>NextJs</Typography>
                     </CardContent>
-                </CardActionArea>
             </Card></Grid>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
                     <CardMedia
                     className={classes.media}
                     title='MaterialUI' 
@@ -107,10 +101,9 @@ export default function Profile() {
                     <CardContent>
                         <Typography>Material-UI</Typography>
                     </CardContent>
-                </CardActionArea>
             </Card></Grid>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
+        
                     <CardMedia
                     className={classes.media}
                     title='NodeJS' 
@@ -118,10 +111,10 @@ export default function Profile() {
                     <CardContent>
                         <Typography>NodeJS</Typography>
                     </CardContent>
-                </CardActionArea>
+              
             </Card></Grid>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
+             
                     <CardMedia
                     className={classes.media}
                     title='Express' 
@@ -129,10 +122,10 @@ export default function Profile() {
                     <CardContent>
                         <Typography>Express</Typography>
                     </CardContent>
-                </CardActionArea>
+            
             </Card></Grid>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
+            
                     <CardMedia
                     className={classes.media}
                     title='MongoDB' 
@@ -140,10 +133,10 @@ export default function Profile() {
                     <CardContent>
                         <Typography>MongoDB</Typography>
                     </CardContent>
-                </CardActionArea>
+            
             </Card></Grid>
             <Grid item xs><Card className={classes.card}>
-                <CardActionArea>
+            
                     <CardMedia
                     className={classes.media}
                     title='Mongoose' 
@@ -151,7 +144,7 @@ export default function Profile() {
                     <CardContent>
                         <Typography>Mongoose</Typography>
                     </CardContent>
-                </CardActionArea>
+            
             </Card></Grid>
             </Grid>
         </Container>

@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Typography, Box } from '@material-ui/core';
 import '@fontsource/roboto-slab';
+import theme from '../styles/theme';
 
 
 const useStyles = makeStyles({
@@ -23,7 +24,10 @@ const useStyles = makeStyles({
         fontFamily: 'Roboto Slab',
         fontWeight: 900,
         marginBottom: '50px',
-        marginLeft: '40px'
+        [theme.breakpoints.down('sm')]: {
+           fontSize: '2em'
+
+        }
     },
 
     img: {
