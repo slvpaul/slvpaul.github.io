@@ -47,7 +47,7 @@ export default function Contact() {
                 <a href="https://github.com/slvpaul"><img className={classes.img} src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt='github' /></a>
                 </Box>
                 <Box>
-                <a href="https://www.linkedin.com/in/paul-s-a12b561a0/"><img className={classes.img} src="/images/linkedinlogo.jpg" alt='linkedin'/></a>
+                <a href="https://www.linkedin.com/in/paul-s-a12b561a0/"><img className={classes.img} src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg" alt='linkedin'/></a>
                 </Box>
             
         </Container>
