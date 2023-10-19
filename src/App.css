@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Button-container {
+    display:flex;
+    gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Button {
+    font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Button:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+.hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+    margin-top: 5px;
+}
+
+.line {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: white;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+}
+
+.x {
+    color: red;
+    margin-left: 55px;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .hamburger-nav {
+        display: flex;
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        z-index: 10;
+        justify-content: space-between;
+    }
+
+    .Nav {
+        display: none;
+    }
 }
