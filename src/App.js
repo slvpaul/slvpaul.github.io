@@ -1,5 +1,8 @@
 import './App.css';
 import { React, useState } from 'react';
+import photo from './photo.jpg';
+import gh from './github.png';
+import ln from './linkedin.png';
 
 
 function App() {
@@ -31,6 +34,20 @@ function App() {
                 <div>About</div>
                 <div>Contact</div>
                </div> : null}
+      </div>
+      <div className="profile">
+        <div className='photo-container'>
+          <img src={photo} />
+        </div>
+        <div className="text-container">
+          <p className="text1">Hello, I'm</p>
+          <h1 className= "text2">Paulo Silva</h1>
+          <p className="text3">Software Developer</p>
+        </div>
+        <div className='social-container'>
+          <img src={ln}/>
+          <img src={gh}/>
+        </div>
       </div>
     </div>
   );
