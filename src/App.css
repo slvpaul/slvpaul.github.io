@@ -3,8 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: rgb(34, 34, 34);
-    color: rgb(255, 255, 255);
+    background-color: whitesmoke;
+    color: black;
 }
 
 body {
@@ -16,25 +16,38 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    margin-bottom: 5px;
+    background-color: rgb(26, 26, 26)
 }
 
 .Button-container {
     display:flex;
     gap: 2rem;
+    background-color:  rgb(26, 26, 26);
 }
 
 .Button {
     font-size: 1.5rem;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+.buttonActive {
+    font-size: 1.5rem;
+    color: rgb(104, 104, 255);
+    background-color: rgb(26, 26, 26);
 }
 
 .Button:hover {
+    cursor: pointer;
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
 
-.logo {
+.home0 {
     font-size: 2rem;
+    color: rgb(104, 104, 255);
 }
 
 .logo:hover {
@@ -93,16 +106,248 @@ body {
 }
 
 .profile {
-    height: 96vh;
+    height: 60vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    width: 100vh;
+    background-color: whitesmoke;
 }
 
 .photo-container {
-
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
+
+.text-container {
+    width: 30vw;
+    align-self: center;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.text-container p {
+    font-weight: 600;
+    background-color: whitesmoke;
+    color: grey;
+}
+
+.text1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+    color: grey;
+}
+
+.text2 {
+    font-size: 3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 2rem;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    background-color: whitesmoke;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    background-color: whitesmoke;
+}
+
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.projects {
+    height: 75vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+
+.proj-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  height: 80vh;
+  width: 20vw;
+  flex-flow: wrap;
+  gap: 1rem;
+}
+
+.proj-container2 {
+  padding: 1.5rem;
+  flex: 1;
+  background: whitesmoke;
+  border-radius: 3rem;
+  border: whitesmoke 0.1rem solid;
+  border-color: grey;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.proj-container3 {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.project-btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+.proj-btn-container {
+    display: flex;
+    gap: 2rem;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+.proj-description {
+    background-color: whitesmoke;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+  }
+
+.about {
+    position: relative;
+  }
+
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-containers,
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    width: 20vw;
+  }
+
+  .experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+
+  article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+
+  article .icon {
+    cursor: default;
+  }
+
+  .next-button {
+    background-color: black;
+    color: white;
+    padding: .5rem;
+  }
+
