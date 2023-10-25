@@ -5,6 +5,7 @@ import gh from './github.png';
 import ln from './linkedin.png';
 import edu from './education.png';
 import exp from './experience.png';
+import tct from './tictactoe.png';
 
 
 function App() {
@@ -93,7 +94,7 @@ function App() {
             <div className='proj-container3'>
               <img src={gh} alt="Project 1" className='project-img'/>
             </div>
-            <h2 className='project-title'>Package delivery simulator</h2>
+            <h2 className='project-title'>Delivery simulator</h2>
             <p className='proj-description'>Lorem ipsum lorem ipsum lorem ipsum</p>
             <div className='proj-btn-container'>
               <button className='project-btn'>Github</button>
@@ -102,17 +103,16 @@ function App() {
           </div> : null}
           {changeProject === 2 ? <div className='proj-container2'>
             <div className='proj-container3'>
-              <img src={gh} alt="Project 1" className='project-img'/>
+              <img src={tct} alt="Project 1" className='project-img'/>
             </div>
             <h2 className='project-title'>Tic Tac Toe</h2>
             <p className='proj-description'>Lorem ipsum lorem ipsum lorem ipsum</p>
             <div className='proj-btn-container'>
               <button className='project-btn'>Github</button>
-              <button className='project-btn'>Live Demo</button>
             </div>
           </div> : null}
         </div>
-        <button className="next-button" onClick={toggleProject}>Next project</button>
+        <button className="next-button" onClick={toggleProject}>Next project >></button>
       </div></div> : null}
       {changeContent === 2 ? <div className='about'>
         <h1 className='text2'>About Me</h1>
@@ -122,7 +122,8 @@ function App() {
                 <div className='details-container'>
                   <img className='icon' src={edu} alt="gh"/>
                   <h3>Education</h3>
-                  <p>B.S. Bachelors Degree</p><br /><p>Computer Science</p>
+                  <p>Bachelor of Science</p>
+                  <h2>Computer Science</h2>
                 </div>
                 <section id="experience">
       <div class="experience-details-container">

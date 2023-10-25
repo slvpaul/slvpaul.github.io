@@ -279,14 +279,10 @@ body {
     height: 80%;
   }
 
-.about {
-    position: relative;
-  }
-
   .about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    gap: .5rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
   }
 
   .about-details-container {
@@ -346,7 +342,7 @@ body {
   }
 
   .next-button {
-    background-color: black;
+    background-color: rgb(26, 26, 26);
     color: white;
     padding: .5rem;
   }
