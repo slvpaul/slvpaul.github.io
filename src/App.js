@@ -83,14 +83,14 @@ function App() {
             <h2 className='project-title'>SMS Spam detection</h2>
             <p className='proj-description'>This project uses the pandas and sklearn libraries in python along with a data set containing labeled sms messages to train a machine learning model to make predictions on whether a text message is spam or not.</p>
             <div className='proj-btn-container'>
-              <button className='project-btn'>Github</button>
+              <a  href="https://github.com/slvpaul/spamdetect"className='project-btn'>Github</a>
             </div>
           </div> : null}
           {changeProject === 0 ? <div className='proj-container2'>
             <h2 className='project-title'>Delivery simulator</h2>
             <p className='proj-description'>This project simulates the delivery of packages by 3 trucks and is a variation on the traveling salesman problem. It utilizes a self-adjusting hash table as the data structure that stores the packages and, to optimize the delivery route, it uses a variation of a nearest neighbor algorithm with time complexity of O(n^2).</p>
             <div className='proj-btn-container'>
-              <button className='project-btn'>Github</button>
+              <a href="https://github.com/slvpaul/deliverysimulator" className='project-btn'>Github</a>
             </div>
           </div> : null}
           {changeProject === 2 ? <div className='proj-container2'>
@@ -100,7 +100,7 @@ function App() {
             <h2 className='project-title'>Tic Tac Toe</h2>
             <p className='proj-description'>This project is a Tic-Tac-Toe game written in React on the frontend. The backend of the game was built using Node.js with the socket.io library for real-time communication between players. It uses nginx as a web server and the entire project was containerized using Docker.</p>
             <div className='proj-btn-container'>
-              <button className='project-btn'>Github</button>
+              <a href="https://github.com/slvpaul/tictactoe" className='project-btn'>Github</a>
             </div>
           </div> : null}
         </div>
