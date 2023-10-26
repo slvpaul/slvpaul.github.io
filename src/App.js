@@ -79,26 +79,18 @@ function App() {
         <div className='projects'>
         <h1 className='text2'>Projects</h1>
         <div className='proj-container1'>
-          {changeProject === 0 ? <div className='proj-container2'>
-            <div className='proj-container3'>
-              <img src={gh} alt="Project 1" className='project-img'/>
-            </div>
+          {changeProject === 1 ? <div className='proj-container2'>
             <h2 className='project-title'>SMS Spam detection</h2>
-            <p className='proj-description'>Lorem ipsum lorem ipsum lorem ipsum</p>
+            <p className='proj-description'>This project uses the pandas and sklearn libraries in python along with a data set containing labeled sms messages to train a machine learning model to make predictions on whether a text message is spam or not.</p>
             <div className='proj-btn-container'>
               <button className='project-btn'>Github</button>
-              <button className='project-btn'>Live Demo</button>
             </div>
           </div> : null}
-          {changeProject === 1 ? <div className='proj-container2'>
-            <div className='proj-container3'>
-              <img src={gh} alt="Project 1" className='project-img'/>
-            </div>
+          {changeProject === 0 ? <div className='proj-container2'>
             <h2 className='project-title'>Delivery simulator</h2>
-            <p className='proj-description'>Lorem ipsum lorem ipsum lorem ipsum</p>
+            <p className='proj-description'>This project simulates the delivery of packages by 3 trucks and is a variation on the traveling salesman problem. It utilizes a self-adjusting hash table as the data structure that stores the packages and, to optimize the delivery route, it uses a variation of a nearest neighbor algorithm with time complexity of O(n^2).</p>
             <div className='proj-btn-container'>
               <button className='project-btn'>Github</button>
-              <button className='project-btn'>Live Demo</button>
             </div>
           </div> : null}
           {changeProject === 2 ? <div className='proj-container2'>
@@ -106,7 +98,7 @@ function App() {
               <img src={tct} alt="Project 1" className='project-img'/>
             </div>
             <h2 className='project-title'>Tic Tac Toe</h2>
-            <p className='proj-description'>Lorem ipsum lorem ipsum lorem ipsum</p>
+            <p className='proj-description'>This project is a Tic-Tac-Toe game written in React on the frontend. The backend of the game was built using Node.js with the socket.io library for real-time communication between players. It uses nginx as a web server and the entire project was containerized using Docker.</p>
             <div className='proj-btn-container'>
               <button className='project-btn'>Github</button>
             </div>
@@ -129,42 +121,97 @@ function App() {
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Skills</h2>
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <h3 class="experience-sub-title2">Languages:</h3>
             <div class="article-container">
               <article>
-                <img className='icon' src={exp}/>
-                <div>
-                  <h3>HTML</h3>
-                </div>
-              </article>
-              <article>
-              <img className='icon' src={exp}/>
-                <div>
-                  <h3>CSS</h3>
-                </div>
-              </article>
-              <article>
-              <img className='icon' src={exp}/>
-                <div>
-                  <h3>SASS</h3>
-                </div>
-              </article>
-              <article>
-              <img className='icon' src={exp}/>
+                <img className='icon' src={exp} alt="gh"/>
                 <div>
                   <h3>JavaScript</h3>
                 </div>
               </article>
               <article>
-              <img className='icon' src={exp}/>
+              <img className='icon' src={exp} alt="gh"/>
                 <div>
-                  <h3>TypeScript</h3>
+                  <h3>Python</h3>
                 </div>
               </article>
               <article>
-              <img className='icon' src={exp}/>
+              <img className='icon' src={exp} alt="gh"/>
                 <div>
-                  <h3>Material UI</h3>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+            </div>
+            <h3 class="experience-sub-title2">Frameworks/Libraries:</h3>
+            <div class="article-container">
+              <article>
+                <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>Spring</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>Express.js</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article>
+            </div>
+            <h3 class="experience-sub-title2">Database/Tools:</h3>
+            <div class="article-container">
+              <article>
+                <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>Linux</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+              <img className='icon' src={exp} alt="gh"/>
+                <div>
+                  <h3>MongoDB</h3>
                 </div>
               </article>
             </div>
