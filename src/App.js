@@ -101,7 +101,7 @@ function App() {
             </div>
           </div> : null}
         </div>
-        <button className="next-button" onClick={toggleProject}>Next project >></button>
+        <button className="next-button" onClick={toggleProject}>Next project</button>
       </div></div> : null}
       {changeContent === 2 ? <div className='about'>
         <h1 className='text2'>About Me</h1>
