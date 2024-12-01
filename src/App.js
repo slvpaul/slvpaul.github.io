@@ -47,7 +47,7 @@ function App() {
         </div>
       </div>
       <div className="hamburger-nav">
-        <div className="logo">Paulo Silva</div>
+        <div className="logo">Paul Silva</div>
         {menuOpen ? null : <div className="hamburger-menu" onClick={toggleMenu}>
             <div className="line"></div>
             <div className="line"></div>
