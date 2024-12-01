@@ -66,7 +66,7 @@ function App() {
         </div>
         <div className="text-container">
           <p className="text1">Hello, I'm</p>
-          <h1 className="text2">Paulo Silva</h1>
+          <h1 className="text2">Paul Silva</h1>
           <p className="text3">Software Developer</p>
           <div className='social-container'>
           <img className='icon' src={ln} alt="linkedin"/>
@@ -94,9 +94,6 @@ function App() {
             </div>
           </div> : null}
           {changeProject === 2 ? <div className='proj-container2'>
-            <div className='proj-container3'>
-              <img src={tct} alt="Project 1" className='project-img'/>
-            </div>
             <h2 className='project-title'>Tic Tac Toe</h2>
             <p className='proj-description'>This project is a Tic-Tac-Toe game written in React on the frontend. The backend of the game was built using Node.js with the socket.io library for real-time communication between players. It uses nginx as a web server and the entire project was containerized using Docker.</p>
             <div className='proj-btn-container'>
